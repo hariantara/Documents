@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title>Tugas Week 5 Day 3</title>
+  <style>
+  body {
+  background:black;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #fff;
+}
+
+.login {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+}
+
+label {
+  font-size: 10pt;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+
+.tombol {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 5px 8px;
+}
+  </style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>FORM</h2></center>
+	<div class="login">
+		<form action="#"  id="main-form" >
+			<div>
+				<label>Username:</label>
+				<input type="text" name="username" id="usernameid" value = ''/>
+			</div>
+      <!--------------------------------------------->
+			<div>
+				<label>Confirm Password:</label>
+				<input type="password" name="password" id="passwordid" value = ''/>
+			</div>
+      <!--------------------------------------------->
+      <div>
+				<label>Password:</label>
+				<input type="password" name="confirmpassword" id="confirmpasswordid" value=''/>
+			</div>
+      <!--------------------------------------------->
+      <div>
+				<label>Email:</label>
+				<input type="email" name="email" id="emailid" value = ''/>
+			</div>
+      <!------------------------------------------------>
+      <div>
+				<label>Confirm Email:</label>
+				<input type="email" name="confirmemail" id="confirmemailid" value = '' />
+			</div>
+      <!------------------------------------------------->
+			<div>
+				<input type="submit" value="Daftar" class="button">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	var mainform = document.getElementById('main-form');
+	console.log(mainform);
+
+	mainform.addEventListener('submit', function()
+{
+		var username = document.getElementById('usernameid').value;
+		console.log(username);
+		var password = document.getElementById('passwordid').value;
+		var confirmpassword = document.getElementById('confirmpasswordid').value;
+		var email = document.getElementById('emailid').value;
+		var confirmemail = document.getElementById('confirmemailid').value;
+
+		if( username != "" && password != "" && confirmpassword != "" && email != "" && confirmemail != "")
+		{
+			if(password == confirmpassword )
+			{
+				return true;
+			}
+			else
+			{
+				//return false;
+				alert("password tidak sama");
+			}
+
+			if(email == confirmemail)
+			{
+				return true;
+			}
+			else
+			{
+				//return false;
+				alert('email tidak sama');
+			}
+		}
+		else
+		{
+			
+			alert('form harus di isi semua');
+		}
+
+
+});
+
+
+</script>
+</html>
