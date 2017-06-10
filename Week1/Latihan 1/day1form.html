@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="UTF-8">
+    <meta description="From Lesson HTML">
+    <link href="/favicon.png" rel="icon" type="image/png">
+    <link href="/index.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        h1 {
+            color: orangered;
+        }
+
+    </style>
+    <script>
+        console.log("I am Javascript")
+
+    </script>
+    <title>
+        FORM LESSON
+    </title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" name="fullname" type="text">
+            </p>
+            <p>
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Work Information</legend>
+        </fieldset>
+    </form>
+    
+    <!-- Form Dengan List down -->
+    <form>
+        <p>
+            <label for="programming">Your prefered programming languages?</label>
+            <input type="text" name="programming" list="programmingLangs"/>
+            <datalist id="programingLangs"></datalist>
+            <label for="suggestion">or pick one</label>
+            <select id="suggestion" name="altProgrammingLangs">
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="ruby">Ruby</option>
+                <option value="Python">Python</option>
+            </select>  
+        </p>
+    </form>
+    
+    <!-- form radio button -->
+    <form>
+        <label for="gender">Gender: </label>
+            <input id="male-radio" type="radio" name="gender" value="male"></input>
+            <label for="male-radio">Male</label>
+            
+            
+            <input id="female-radio" type="radio" name="gender" value="female"></input>
+            <label for="female-radio">Female</label>
+    </form>
+
+    <!-- from submit dan action -->
+    <form action="halaman_sukses_submit.html" method="POST">
+        <label>
+            Nama:
+            <input type="text" name="nama"/>
+        </label>
+        <input type="submit" value="Kirim"/>    
+    </form>
+</body>
