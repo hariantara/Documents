@@ -1,0 +1,26 @@
+TUGAS 1
+
+Pseudocode:
+BACA dan SIMPAN "angka pertama"
+BACA dan SIMPAN "angka kedua"
+HITUNG "angka pertama" dikali "angka kedua"
+SIMPAN hasil hitungan sebelumnya
+TULISKAN hasil hitungan
+
+
+TUGAS2
+
+Pseudocode:
+BACA dan SIMPAN "kata x"
+IF "kata x" sama dengan "Saya Belajar JavaScript!"
+TULISKAN "Pasti Bisa!"
+
+
+TUGAS 3
+
+Pseudocode:
+BACA dan SIMPAN "angka x"
+SIMPAN "angka y" dengan nilai 0
+HITUNG "hasil tambah" dari "angka y" ditambah 1
+TAMPILKAN "hasil perkalian" dari "hasil tambah" dikali 3
+ULANGI sampai "hasil perkalian" lebih kecil dari "angka x"

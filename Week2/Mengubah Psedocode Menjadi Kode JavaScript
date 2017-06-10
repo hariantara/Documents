@@ -1,0 +1,44 @@
+Tugas 1
+
+var nama;
+var anggkaPembilang;
+var angkaPenyebut;
+function hasilBagi(){
+return angkaPembilang/angkaPenyebut;
+}
+console.log(hasilBagi);
+
+Tugas 2
+var alas;
+var tinggi;
+function luasSegitiga(){
+return alas*tinggi/2;
+}
+console.log(luasSegitiga);
+
+Tugas 3
+
+var tahun;
+if(tahun%4==0)
+{
+	if(tahun%100!=0)
+	{
+		console.log('tahun adalah tahun 		kabisat');
+	}
+	else
+	{
+		if(tahun%400==0)
+		{
+			console.log('tahun adalah 				tahun kabisat');
+		}
+		else
+		{
+			console.log('tahun adalah 				bukan tahun kabisat');
+		}
+	}
+	
+}
+else
+{
+	console.log('tahun adalah bukan tahun kabisat');
+}
